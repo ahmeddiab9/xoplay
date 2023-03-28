@@ -157,12 +157,17 @@ button {
   line-height: 60px;
 }
 .ws-contact-icon.facebook {
-  background: #adb3c1;
+  background: #007bb6;
   transition-delay: 150ms;
   color: #fff;
 }
+.ws-contact-icon.whatsaap{
+  background: #3AC371;
+  transition-delay: 250ms;
+  color: #fff;
+}
 .ws-contact-icon.message {
-  background: #ff9b2d;
+  background: #e4405f;
   transition-delay: 100ms;
   color: #fff;
 }
@@ -225,7 +230,12 @@ color: #fff;
       line-height: 50px !important;
   }
   .bn-go-to{
-    font-size: 12px !important;
+    width: 55% !important;
+    font-size: 21px !important;
+  }
+  .nav__logo img{
+    width: 120px !important;
+    height: 90px !important;
   }
   .ws-contact{
     bottom: -50px;
@@ -397,9 +407,9 @@ color: #fff;
   transition: .5s ease-in-out;
 }
 .go-to-btn button:hover{
-  border: 1px solid #000;
-  color: #000 !important;
-  background-color: #fff;
+  border: 1px solid #ff9b2d;
+  color: #fff !important;
+  background-color: #ff0202;
   transform: translateY(-10px);
   transition: .5s ease-in-out;
   box-shadow: 0 0px 39px rgb(200 184 184 / 40%) !important
