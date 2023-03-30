@@ -420,7 +420,7 @@ color: #fff;
 .go-to-btn button:hover{
   border: 1px solid #ff9b2d;
   color: #fff !important;
-  background: linear-gradient(45deg, #3ad09c, #7dd857);
+  /* background: linear-gradient(45deg, #3ad09c, #7dd857); */
   transform: translateY(-10px);
   transition: .5s ease-in-out;
   box-shadow: 0 0px 39px rgb(200 184 184 / 40%) !important
