@@ -96,7 +96,7 @@ button {
 .ws-contact {
   position: fixed;
     margin: 20px 30px 10px 0;
-    right: 0px;
+    right: -10px;
     bottom: -72px;
     z-index: 9999;
 }
@@ -233,7 +233,7 @@ color: #fff;
       width: 50px !important;
       height: 50px !important;
       line-height: 50px !important;
-      bottom: 55px !important;
+      bottom: 66px !important;
   }
   .ws-contact-icon i{
       line-height: 50px !important;
@@ -241,6 +241,7 @@ color: #fff;
   .bn-go-to-soon{
     width: 55% !important;
     font-size: 21px !important;
+    letter-spacing: 10px;
   }
   .nav__logo img{
     width: 145px !important;
@@ -414,6 +415,7 @@ color: #fff;
   font-weight: 600;
   font-family: system-ui;
   transition: .5s ease-in-out;
+  background: linear-gradient(45deg, #08080882, #0b0a0a73);
 }
 .go-to-btn button:hover{
   border: 1px solid #ff9b2d;
