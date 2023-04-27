@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Collapsible sidebar using Bootstrap 4</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <!-- <link rel="stylesheet" href="admin.css"> -->
+  <!-- <link rel="stylesheet" href="superadmin.css"> -->
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/superadmin.css">
+</head>
+
+<style>
+   .tabs input[name=tab-control]:nth-of-type(1):checked~.slider {
+    transform: translateX(-50%);
+  }
+
+  .tabs input[name=tab-control]:nth-of-type(2):checked~.slider {
+    transform: translateX(-255%);
+  }
+</style>
+
+<body dir="rtl">
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="image-wrapper">
+        <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+      </div>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+            <div>P</div>
+            <h5>Playstation</h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-header"><span> الرئيسيه </span></li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-vip-diamond-fill"></i>
+                  </span>
+                  <span class="menu-title">إضافه و أسعار</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">أجهزة</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مشروبات ومأكولات</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مصروفات</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-bar-chart-2-fill"></i>
+                  </span>
+                  <span class="menu-title">المستخدمين</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الموظفيين</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الوردية</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-shopping-cart-fill"></i>
+                  </span>
+                  <span class="menu-title">تقارير</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">اجهزة</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مشروبات و مأكولات </span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">المصروفات</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الموظف</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الجرد</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-global-fill"></i>
+                  </span>
+                  <span class="menu-title">الحساب الشخصي</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الملف الشخصي</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-paint-brush-fill"></i>
+                  </span>
+                  <span class="menu-title">الإشتراكات</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الملف الشخصي</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="layout text-center">
+      <main class="content">
+        <div>
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+            <i class="ri-menu-line ri-xl"></i>
+          </a>
+          <h1 style="margin-bottom: 0">PROJRCT MANAGEMENT</h1>
+          <div class="tabs">
+
+            <input type="radio" id="tab1" name="tab-control" checked>
+            <input type="radio" id="tab2" name="tab-control">
+            <input type="radio" id="tab3" name="tab-control">
+            <input type="radio" id="tab4" name="tab-control">
+            <ul>
+              <li title="موظفين"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
+                    <path
+                      d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z" />
+                  </svg><br><span>موظفين</span></label></li>
+              <li title="ورديه "><label for="tab2" role="button"><svg viewBox="0 0 24 24">
+                    <path
+                      d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
+                  </svg><br><span> ورديه</span></label></li>
+            </ul>
+
+            <div class="slider">
+              <div class="indicator"></div>
+            </div>
+            <div class="content">
+              <section>
+                <div class="calcsum">
+                  <div class="row">
+                    <form class="form-devices-super" action="">
+                       
+                        <div class="user-info-par">
+                            <div class="user-info-add">
+                                <div id="myDIVUser" class="buttons-select">
+                                    <button class="btn btn-cold">مخصص </button>
+                                    <button class="btn btn-cold active">كامل</button>
+                                    </div>
+    
+                            </div>
+    
+                            <div class="inputs-info-add">
+                                <div class="row">
+                                   <div class="col-5">
+                                    <input type="text" placeholder="الاسم">
+                                    <input type="text" placeholder="رقم الموبايل">
+                                   </div>
+                                   <div class="col-5">
+                                    <input type="text" placeholder="إسم المستخدم ">
+                                    <input type="text" placeholder="الباسورد">
+                                   </div>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                      <div class="device_cat_number">
+                        <p>8</p>
+                        <button class="btn btn-ok">OK</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <style>
+                    .card-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                      }
+                    .card {
+                        flex-basis: calc(30% - 10px);
+                        margin-bottom: 20px;
+                        background-color: #000;
+                        border: 1px solid gray;
+                        border-radius: 5px;
+                        padding: 20px;
+                      }
+                      
+                      .header-card {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                      }
+                      
+                      .name-number {
+                        display: flex;
+                        flex-direction: column;
+                      }
+                      
+                      .picture img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-left: 20px;
+                      }
+                      
+                      .footer-card {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-top: 20px;
+                      }
+                      
+                      .close-btn {
+                        border: none;
+                        background-color: transparent;
+                        font-size: 24px;
+                        font-weight: bold;
+                        cursor: pointer;
+                      }
+                      
+                      .cin-pin {
+                        margin: 0;
+                      }
+                      
+                      .icon-off {
+                        font-size: 24px;
+                        color: red;
+                        margin-left: 10px;
+                      }
+                      
+                      .send-btn {
+                        border: none;
+                        background-color: blue;
+                        color: #000;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      }
+                      .btn-time{
+                        padding: 8px 70px;
+                        border-radius: 8px;
+                        background-color: transparent;
+                        border: 1px solid #fff;
+                        color: #fff;
+                      }
+                </style>
+
+                <div class="user-card">
+                    <div class="card-par-items">
+                        <div class="card-row">
+                            <div class="card">
+                                <div class="header-card">
+                                  <div class="name-number">
+                                    <h5>Name</h5>
+                                    <p>Number</p>
+                                  </div>
+                                  <div class="picture">
+                                    <img src="imgs/user-icon-trendy-flat-style-isolated-grey-background-user-symbol-user-icon-trendy-flat-style-isolated-grey-background-123663211.jpg" alt="Profile Picture">
+                                  </div>
+                                </div>
+                                <div class="body-card">
+                                  <p>Kamel</p>
+                                  <p>Mazin</p>
+                                  <p>Welcome@123</p>
+                                </div>
+                                <div class="footer-card">
+                                  <button class="close-btn"><i class="fa fa-times" style="font-size: 20px !important; color: #f00;"></i></button>
+                                  <button class="close-btn"><i class="fas fa-pencil-alt" style="font-size: 20px !important; color: #f00;"></i></button>
+                                  <button class="close-btn"><i class="fas fa-power-off" style="font-size: 20px !important; color: #f00;"></i></button>
+                                  <button class="close-btn"><i class="fas fa-paper-plane" style="font-size: 20px !important; color: #f00;"  ></i></button>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <section>
+                    <div class="row-print-date">
+                        <div class="row">
+                            <div class="col-6 text-right">
+                                <button class="btn btn-time"> أختر المده </button>
+                            </div>
+                            <div class="col-6 text-left">
+                                <a href="#" style="color: #fff;"><i class="fas fa-print" style="font-size: 40px;"></i></a>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+
+                              <table class="table table-striped table-dark" style="width: 40%; margin: auto;">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                        </div>
+                    </div>
+              </section>
+            </div>
+          </div>
+      </main>
+      <div class="overlay"></div>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
+<script>
+  function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+  function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return typeof key === "symbol" ? key : String(key); }
+  function _toPrimitive(input, hint) { if (typeof input !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (typeof res !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+  const ANIMATION_DURATION = 300;
+  const SIDEBAR_EL = document.getElementById("sidebar");
+  const SUB_MENU_ELS = document.querySelectorAll(".menu > ul > .menu-item.sub-menu");
+  const FIRST_SUB_MENUS_BTN = document.querySelectorAll(".menu > ul > .menu-item.sub-menu > a");
+  const INNER_SUB_MENUS_BTN = document.querySelectorAll(".menu > ul > .menu-item.sub-menu .menu-item.sub-menu > a");
+  class PopperObject {
+    constructor(reference, popperTarget) {
+      _defineProperty(this, "instance", null);
+      _defineProperty(this, "reference", null);
+      _defineProperty(this, "popperTarget", null);
+      this.init(reference, popperTarget);
+    }
+    init(reference, popperTarget) {
+      this.reference = reference;
+      this.popperTarget = popperTarget;
+      this.instance = Popper.createPopper(this.reference, this.popperTarget, {
+        placement: "right",
+        strategy: "fixed",
+        resize: true,
+        modifiers: [{
+          name: "computeStyles",
+          options: {
+            adaptive: false
+          }
+        }, {
+          name: "flip",
+          options: {
+            fallbackPlacements: ["left", "right"]
+          }
+        }]
+      });
+      document.addEventListener("click", e => this.clicker(e, this.popperTarget, this.reference), false);
+      const ro = new ResizeObserver(() => {
+        this.instance.update();
+      });
+      ro.observe(this.popperTarget);
+      ro.observe(this.reference);
+    }
+    clicker(event, popperTarget, reference) {
+      if (SIDEBAR_EL.classList.contains("collapsed") && !popperTarget.contains(event.target) && !reference.contains(event.target)) {
+        this.hide();
+      }
+    }
+    hide() {
+      this.instance.state.elements.popper.style.visibility = "hidden";
+    }
+  }
+  class Poppers {
+    constructor() {
+      _defineProperty(this, "subMenuPoppers", []);
+      this.init();
+    }
+    init() {
+      SUB_MENU_ELS.forEach(element => {
+        this.subMenuPoppers.push(new PopperObject(element, element.lastElementChild));
+        this.closePoppers();
+      });
+    }
+    togglePopper(target) {
+      if (window.getComputedStyle(target).visibility === "hidden") target.style.visibility = "visible"; else target.style.visibility = "hidden";
+    }
+    updatePoppers() {
+      this.subMenuPoppers.forEach(element => {
+        element.instance.state.elements.popper.style.display = "none";
+        element.instance.update();
+      });
+    }
+    closePoppers() {
+      this.subMenuPoppers.forEach(element => {
+        element.hide();
+      });
+    }
+  }
+  const slideUp = (target, duration = ANIMATION_DURATION) => {
+    const {
+      parentElement
+    } = target;
+    parentElement.classList.remove("open");
+    target.style.transitionProperty = "height, margin, padding";
+    target.style.transitionDuration = `${duration}ms`;
+    target.style.boxSizing = "border-box";
+    target.style.height = `${target.offsetHeight}px`;
+    target.offsetHeight;
+    target.style.overflow = "hidden";
+    target.style.height = 0;
+    target.style.paddingTop = 0;
+    target.style.paddingBottom = 0;
+    target.style.marginTop = 0;
+    target.style.marginBottom = 0;
+    window.setTimeout(() => {
+      target.style.display = "none";
+      target.style.removeProperty("height");
+      target.style.removeProperty("padding-top");
+      target.style.removeProperty("padding-bottom");
+      target.style.removeProperty("margin-top");
+      target.style.removeProperty("margin-bottom");
+      target.style.removeProperty("overflow");
+      target.style.removeProperty("transition-duration");
+      target.style.removeProperty("transition-property");
+    }, duration);
+  };
+  const slideDown = (target, duration = ANIMATION_DURATION) => {
+    const {
+      parentElement
+    } = target;
+    parentElement.classList.add("open");
+    target.style.removeProperty("display");
+    let {
+      display
+    } = window.getComputedStyle(target);
+    if (display === "none") display = "block";
+    target.style.display = display;
+    const height = target.offsetHeight;
+    target.style.overflow = "hidden";
+    target.style.height = 0;
+    target.style.paddingTop = 0;
+    target.style.paddingBottom = 0;
+    target.style.marginTop = 0;
+    target.style.marginBottom = 0;
+    target.offsetHeight;
+    target.style.boxSizing = "border-box";
+    target.style.transitionProperty = "height, margin, padding";
+    target.style.transitionDuration = `${duration}ms`;
+    target.style.height = `${height}px`;
+    target.style.removeProperty("padding-top");
+    target.style.removeProperty("padding-bottom");
+    target.style.removeProperty("margin-top");
+    target.style.removeProperty("margin-bottom");
+    window.setTimeout(() => {
+      target.style.removeProperty("height");
+      target.style.removeProperty("overflow");
+      target.style.removeProperty("transition-duration");
+      target.style.removeProperty("transition-property");
+    }, duration);
+  };
+  const slideToggle = (target, duration = ANIMATION_DURATION) => {
+    if (window.getComputedStyle(target).display === "none") return slideDown(target, duration);
+    return slideUp(target, duration);
+  };
+  const PoppersInstance = new Poppers();
+
+  /**
+   * wait for the current animation to finish and update poppers position
+   */
+  const updatePoppersTimeout = () => {
+    setTimeout(() => {
+      PoppersInstance.updatePoppers();
+    }, ANIMATION_DURATION);
+  };
+
+  /**
+   * sidebar collapse handler
+   */
+  document.getElementById("btn-collapse").addEventListener("click", () => {
+    SIDEBAR_EL.classList.toggle("collapsed");
+    PoppersInstance.closePoppers();
+    if (SIDEBAR_EL.classList.contains("collapsed")) FIRST_SUB_MENUS_BTN.forEach(element => {
+      element.parentElement.classList.remove("open");
+    });
+    updatePoppersTimeout();
+  });
+
+  /**
+   * sidebar toggle handler (on break point )
+   */
+  document.getElementById("btn-toggle").addEventListener("click", () => {
+    SIDEBAR_EL.classList.toggle("toggled");
+    updatePoppersTimeout();
+  });
+
+  /**
+   * toggle sidebar on overlay click
+   */
+  document.getElementById("overlay").addEventListener("click", () => {
+    SIDEBAR_EL.classList.toggle("toggled");
+  });
+  const defaultOpenMenus = document.querySelectorAll(".menu-item.sub-menu.open");
+  defaultOpenMenus.forEach(element => {
+    element.lastElementChild.style.display = "block";
+  });
+
+  /**
+   * handle top level submenu click
+   */
+  FIRST_SUB_MENUS_BTN.forEach(element => {
+    element.addEventListener("click", () => {
+      if (SIDEBAR_EL.classList.contains("collapsed")) PoppersInstance.togglePopper(element.nextElementSibling); else {
+        const parentMenu = element.closest(".menu.open-current-submenu");
+        if (parentMenu) parentMenu.querySelectorAll(":scope > ul > .menu-item.sub-menu > a").forEach(el => window.getComputedStyle(el.nextElementSibling).display !== "none" && slideUp(el.nextElementSibling));
+        slideToggle(element.nextElementSibling);
+      }
+    });
+  });
+
+  /**
+   * handle inner submenu click
+   */
+  INNER_SUB_MENUS_BTN.forEach(element => {
+    element.addEventListener("click", () => {
+      slideToggle(element.nextElementSibling);
+    });
+  });
+
+
+
+
+</script>
+
+
+
+<script>
+  var btnContainer = document.getElementById("myDIVUser");
+
+  // Get all buttons with class="btn" inside the container
+  var btns = btnContainer.getElementsByClassName("btn-cold");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+
+</html>

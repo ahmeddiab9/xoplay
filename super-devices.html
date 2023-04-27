@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Devices</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
+
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  <!-- <link rel="stylesheet" href="admin.css"> -->
+  <!-- <link rel="stylesheet" href="superadmin.css"> -->
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/superadmin.css">
+</head>
+
+
+
+<body dir="rtl">
+  <div class="layout has-sidebar fixed-sidebar fixed-header">
+    <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+      <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+      <div class="image-wrapper">
+        <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+      </div>
+      <div class="sidebar-layout">
+        <div class="sidebar-header">
+          <div class="pro-sidebar-logo">
+            <div>P</div>
+            <h5>Playstation</h5>
+          </div>
+        </div>
+        <div class="sidebar-content">
+          <nav class="menu open-current-submenu">
+            <ul>
+              <li class="menu-header"><span> الرئيسيه </span></li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-vip-diamond-fill"></i>
+                  </span>
+                  <span class="menu-title">إضافه و أسعار</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">أجهزة</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مشروبات ومأكولات</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مصروفات</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-bar-chart-2-fill"></i>
+                  </span>
+                  <span class="menu-title">المستخدمين</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الموظفيين</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الوردية</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-shopping-cart-fill"></i>
+                  </span>
+                  <span class="menu-title">تقارير</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">اجهزة</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">مشروبات و مأكولات </span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">المصروفات</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الموظف</span>
+                      </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الجرد</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-global-fill"></i>
+                  </span>
+                  <span class="menu-title">الحساب الشخصي</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الملف الشخصي</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-item sub-menu">
+                <a href="#">
+                  <span class="menu-icon">
+                    <i class="ri-paint-brush-fill"></i>
+                  </span>
+                  <span class="menu-title">الإشتراكات</span>
+                </a>
+                <div class="sub-menu-list">
+                  <ul>
+                    <li class="menu-item">
+                      <a href="#">
+                        <span class="menu-title">الملف الشخصي</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <div class="layout text-center">
+      <main class="content">
+        <div>
+          <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+            <i class="ri-menu-line ri-xl"></i>
+          </a>
+          <h1 style="margin-bottom: 0">PROJRCT MANAGEMENT</h1>
+          <div class="tabs">
+
+            <input type="radio" id="tab1" name="tab-control" checked>
+            <input type="radio" id="tab2" name="tab-control">
+            <input type="radio" id="tab3" name="tab-control">
+            <input type="radio" id="tab4" name="tab-control">
+            <ul>
+              <li title="اجهزة"><label for="tab1" role="button"><svg viewBox="0 0 24 24">
+                    <path
+                      d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z" />
+                  </svg><br><span>اجهزة</span></label></li>
+              <li title="مشروبات ومأكولات"><label for="tab2" role="button"><svg viewBox="0 0 24 24">
+                    <path
+                      d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
+                  </svg><br><span>مشروبات ومأكولات</span></label></li>
+              <li title="مصروفات"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+                    <path
+                      d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+                  </svg><br><span>مصروفات</span></label></li>
+            </ul>
+
+            <div class="slider">
+              <div class="indicator"></div>
+            </div>
+            <div class="content">
+              <section>
+                <div class="calcsum">
+                  <div class="row">
+                    <div class="category_global">
+                      <div class="device_global_cat">
+                        <div class="category-single">
+                          <p class="border-cat text-info">single</p>
+                          <p><i class="fas fa-sync-alt"></i></p>
+                          <p class="border-cat">0</p>
+                        </div>
+                        <div class="category-multi">
+                          <p class="border-cat text-warning">multi</p>
+                          <p><i class="fas fa-sync-alt"></i></p>
+                          <p class="border-cat">0</p>
+                        </div>
+                        <div class="category-plus">
+                          <p class="border-cat text-primary">plus</p>
+                          <p><i class="fas fa-sync-alt"></i></p>
+                          <p class="border-cat">0</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <form class="form-devices-super" action="">
+                      <div class="inputs-form">
+                        <div class="right-inputs">
+                          <input type="text" name="" id="" placeholder="الاسم">
+                          <input type="text" placeholder="الساعات">
+                        </div>
+                        <div class="left-inputs">
+                          <input type="text" name="" id="" placeholder="السعر">
+                        </div>
+
+                      </div>
+                      <div class="device_cat_number">
+                        <p>8</p>
+                        <button class="btn btn-ok">OK</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="divider bg-white">
+                  <hr>
+                </div>
+                <div class="status-devices">
+                  <div>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <!-- add more li items as needed -->
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="drinks-eat-admin">
+                  <div id="myDIV" class="buttons-select">
+                    <button class="btn btn-cold">مشروبات</button>
+                    <button class="btn btn-cold active">مأكولات</button>
+                    <button class="btn btn-cold">إندومي</button>
+                    <button class="btn btn-cold">حلويات</button>
+                    <button class="btn btn-cold">شيبسي</button>
+                    <button class="btn btn-cold">تسالي</button>
+
+                  </div>
+                  <div class="req-parent">
+                    <div class="form-input-req">
+                      <div class="form-inputs-value">
+                        <form action="">
+                          <div class="row">
+                            <div class="col-6">
+                              <input type="text" placeholder="الاسم">
+                            </div>
+                            <div class="col-6">
+                              <input type="text" placeholder="السعر">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <input type="text" placeholder="عدد">
+                            </div>
+                          </div>
+  
+                        </form>
+                      </div>
+  
+                      <div class="add-items">
+                        <button class="add-item">
+                          plus
+                        </button>
+                        <button class="ver-item">
+                          OK
+                        </button>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div id="myDIV" class="buttons-select">
+                          <button class="btn btn-cold">مشروبات</button>
+                          <button class="btn btn-cold ">مأكولات</button>
+                          <button class="btn btn-cold">إندومي</button>
+                          <button class="btn btn-cold">حلويات</button>
+                          <button class="btn btn-cold">شيبسي</button>
+                          <button class="btn btn-cold active">تسالي</button>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="items-drinks-type">
+                    <div class="cold-type-items">
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>44</p>
+                            <p>Moca</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>55</p>
+                            <p>Latte</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>66</p>
+                            <p>Espresso</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>77</p>
+                            <p>Americano</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>77</p>
+                            <p>Americano</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>88</p>
+                            <p>Cappuccino</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>99</p>
+                            <p>Macchiato</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex">
+                            <p>100</p>
+                            <p>Drip Coffee</p>
+                            <button class="close-super-devices" aria-label="Close">
+                              <i class="fa fa-times" style="font-size: 20px !important;"></i>
+                            </button>
+                          </div>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section>
+
+                <div class="req-parent">
+                  <div class="form-input-req">
+                    <div class="form-inputs-value">
+                      <form action="">
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="text" placeholder="الاسم">
+                          </div>
+                          <div class="col-6">
+                            <input type="text" placeholder="السعر">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <input type="text" placeholder="عدد">
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+
+                    <div class="add-items">
+                      <button class="add-item">
+                        plus
+                      </button>
+                      <button class="ver-item">
+                        OK
+                      </button>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div id="myDIV" class="buttons-select">
+                        <button class="btn btn-cold">مشروبات</button>
+                        <button class="btn btn-cold ">مأكولات</button>
+                        <button class="btn btn-cold">إندومي</button>
+                        <button class="btn btn-cold">حلويات</button>
+                        <button class="btn btn-cold">شيبسي</button>
+                        <button class="btn btn-cold active">تسالي</button>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="par-devices-super">
+                    <div class="devices-choose">
+                        <ul class="devices-ul exp-ul in-start">
+                            <li class="devices-item">
+                              <button><i class="fa fa-times" style="font-size: 20px !important;"></i></button>
+                                <p>كهرباء</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>مياه</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>سكر</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>شاي</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>حليب</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>نسكافيه</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>بيبسي</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>مانجو</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>فراوله</p>
+                            </li>
+                            <li class="devices-item">
+                                <p>صابون</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>  
+              </section>
+            </div>
+          </div>
+      </main>
+      <div class="overlay"></div>
+    </div>
+  </div>
+</body>
+
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="js/admin.js"></script>
+<script>
+  var btnContainer = document.getElementById("myDIV");
+
+  // Get all buttons with class="btn" inside the container
+  var btns = btnContainer.getElementsByClassName("btn-cold");
+
+  // Loop through the buttons and add the active class to the current/clicked button
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+
+</html>

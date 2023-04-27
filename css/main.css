@@ -1203,3 +1203,1137 @@ color: #fff;
   background-color: #080;
   transition: .5s ease-in-out;
 }
+body,
+    .playstart-header {
+        background: #000 !important;
+    }
+
+    .playstart-header {
+        border-bottom: 1px solid #ffffff;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .playstart-header .logo-sec {
+        position: relative;
+    }
+
+    .playstart-header .button-start,
+    .playstart-header .calculator-time,
+    .playstart-header .logo-sec,
+    .playstart-header .user-details,
+    .playstart-header .expenses-sec {
+        width: 20%;
+    }
+
+    .button-start .btn-go,
+    .playstart-header .expenses-sec .btn {
+        color: #fff;
+        border: 1px solid #fff;
+        width: 50%;
+        height: 50px;
+    }
+
+    .button-start .btn-go {
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 23px;
+    }
+
+    .book--now img {
+        width: 70%;
+    }
+
+    .calculator-time {
+        display: flex;
+        align-items: center;
+    }
+
+    .calculator-time p {
+        margin-bottom: 0 !important;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+    .playstart-header .logo-sec {
+        text-align: center;
+    }
+
+    .playstart-header .logo-sec p {
+        margin-bottom: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .playstart-header .user-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding: 0 56px;
+    }
+
+    .playstart-header .user-details p {
+        margin-bottom: 0 !important;
+        font-size: 13px !important;
+        color: #b4b0b0;
+    }
+
+    .playstart-header .user-details p i {
+        color: #fff !important;
+    }
+
+    .playstart-header .expenses-sec {
+        text-align: left;
+    }
+
+    .playstart-header .expenses-sec .btn-expenses {
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+
+    .login-form-reset {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        padding-top: 20px;
+        position: relative;
+    }
+
+    .login-form-reset .close {
+        position: absolute;
+        content: 'X';
+        left: -171px;
+        top: 47px;
+        z-index: 999;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .login-form-reset h2 {
+        margin-top: 25px;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .login-form-reset form input {
+        padding: 5px;
+        border-radius: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        text-align: center;
+    }
+
+    .login-form-reset .btn {
+        color: #fff;
+    }
+
+    .old-pass {
+        width: 40%;
+    }
+
+    .new-pass,
+    .confirm-pass {
+        width: 70%;
+    }
+
+    .bnt-confirm-password {
+        border: 1px solid #fff;
+        color: #fff;
+        width: 40%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pr-dev-drinks {
+        margin-top: 80px;
+    }
+
+    .devices-ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .in-start .devices-item {
+        flex-direction: column !important;
+    }
+
+    .toast {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        border-radius: 6px;
+        background: #fff;
+        padding: 20px 35px 20px 25px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-left: 8px solid #40f467;
+        overflow: hidden;
+        transform: translateX(calc(100% + 30px));
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.25, 1.35);
+    }
+
+    .toast.active {
+        transform: translateX(0);
+    }
+
+    .toast-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toast-check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width: 35px;
+        background-color: #40f467;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .message {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .message-text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .text-1 {
+        color: #333;
+    }
+
+    .text-2 {
+        color: #666;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .toast-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        padding: 5px;
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .toast-close:hover {
+        opacity: 1;
+    }
+
+    .progress {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: #ddd;
+    }
+
+    .progress::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #40f467;
+    }
+
+    .progress.active::before {
+        animation: progress 5s linear forwards;
+    }
+
+    @keyframes progress {
+        100% {
+            right: 100%;
+        }
+    }
+
+    .toast-btn {
+        padding: 10px 40px;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        background-color: #40f467;
+        color: #fff;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .toast-btn:hover {
+        background-color: #0fbd35;
+    }
+
+    .toast:not(.showing):not(.show) {
+        opacity: 0 !important;
+    }
+
+    .orderout {
+        margin-top: 100px;
+    }
+
+    .orderout h2 {
+        margin-top: 28px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+    .orderout .bar-orders .contain-all-bar-orders{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        margin-top: 20px;
+        height: 60vh;
+        overflow: auto;
+    }
+    .orderout .bar-orders .contain-all-bar-orders .item-bar-orders{
+        border: 1px solid #eee;
+        border-radius: 8px;
+        color: #fff;
+        text-align: center;
+        flex-direction: column;
+        flex-basis: calc(170px - 10px);
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+        transition: .3s ease-in-out;
+    }
+    .orderout .bar-orders .contain-all-bar-orders .item-bar-orders p:nth-of-type(2){
+        font-size: 40px;
+    }
+
+    .bar-order-btn{
+        width: 30%;
+        margin: auto;
+    }
+
+    .orderout button{
+        padding: 10px 100px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        font-size: 30px;
+        transition: .5s ease-in-out;
+        width: 100%;
+    }
+    .orderout button:hover{
+        background-color: #fff;
+        color: #000;
+        transition: .5s ease-in-out;
+    }
+    .playstart-header {
+      border-bottom: 1px solid #ffffff;
+      padding-left : 15px;
+      padding-right: 15px;
+  }
+
+  .playstart-header .button-start,
+  .playstart-header .calculator-time,
+  .playstart-header .logo-sec,
+  .playstart-header .user-details,
+  .playstart-header .expenses-sec {
+      width: 20%;
+  }
+  .button-start .btn-go , .playstart-header .expenses-sec .btn{
+      color: #fff;
+      border: 1px solid #fff;
+      width: 50%;
+      height: 50px;
+  }
+  .button-start .btn-go{
+      font-weight: bold;
+      font-family: monospace;
+      font-size: 23px;
+  }
+
+  .book--now img {
+      width: 70%;
+  }
+
+  .calculator-time {
+      display: flex;
+      align-items: center;
+  }
+
+  .calculator-time p {
+      margin-bottom: 0 !important;
+      margin-right: 10px;
+      margin-top: 3px;
+  }
+
+  .playstart-header .logo-sec {
+      text-align: center;
+  }
+
+  .playstart-header .logo-sec p {
+      margin-bottom: 0;
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  .playstart-header .user-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      padding: 0 56px;
+  }
+
+  .playstart-header .user-details p {
+      margin-bottom: 0 !important;
+      font-size: 13px !important;
+      color: #b4b0b0;
+  }
+  .playstart-header .user-details p i{
+      color: #fff !important;
+  }
+
+  .playstart-header .expenses-sec {
+      text-align: left;
+  }
+  .playstart-header .expenses-sec .btn-expenses {
+      text-transform: uppercase;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  .pr-dev-drinks {
+      width: 98%;
+      margin: auto;
+      margin-top: 80px;
+  }
+
+  .pr-dev-drinks .ch-per-devices-drinks {
+      display: flex;
+      padding: 10px 0;
+  }
+
+  .pr-dev-drinks .devices,
+  .pr-dev-drinks .drinks {
+      width: 49%;
+      position: relative;
+  }
+  .pr-dev-drinks .drinks::before{
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 75%;
+      color: #fff;
+      background-color: #fff;
+      top: 35px;
+      right: -50px
+  }
+  .start,
+  .single-or-multi,
+  .time-best-open {
+      width: 90%;
+      margin: auto;
+      margin-top: 25px;
+      margin-bottom: 40x;
+      text-align: center;
+  }
+
+  .btn-start {
+      color: #fff;
+      width: 70%;
+      border: 1px solid #ffff;
+      padding: 13px 0;
+      border-radius: 8px;
+      text-transform: uppercase;
+      transition: .5s ease-in-out;
+      font-size: 29px;
+      font-weight: bold;
+      font-style: italic;
+  }
+  .btn-start:hover , 
+  .single-or-multi .btn-single:hover,
+  .single-or-multi .btn-multi:hover ,
+  .single-or-multi .btn-plus:hover , 
+  .time-best-open .btn:hover{
+      transform: translateY(-4px) scale(1.01);
+      transition: .5s ease-in-out;
+      color: #fff;
+      box-shadow: 0 2px 18px 1px rgb(159 152 161)
+  }
+
+  .single-or-multi,
+  .time-best-open {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .single-or-multi .btn-single,
+  .single-or-multi .btn-multi ,
+  .single-or-multi .btn-plus {
+      width: 30%;
+      color: #fff;
+      border: 1px solid #fff;
+  }
+
+  .time-best-open .btn {
+      width: 47%;
+      color: #fff;
+      border: 1px solid #fff;
+  }
+
+  .name-device,
+  .name-drinks {
+      width: 20%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .name-drinks{
+      width: 17% !important;
+  }
+
+  .name-device svg {
+      font-size: 23px !important;
+      margin-top: 10px !important;
+  }
+  .name-drinks svg{
+      font-size: 23px !important;
+  }
+
+  .name-device span,
+  .name-drinks span {
+      font-size: 22px;
+      margin-top: 8px;
+      font-weight: bold;
+  }
+
+  .devices-options {
+      width: 80%;
+  }
+
+  .drinks-dev {
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+
+  .drinks-ul,
+  .devices-ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+
+  .drinks-ul .drinks-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      padding: 5px;
+      margin-bottom: 15px;
+  }
+  .drinks-type-cat{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .drinks-type-cat .hot , .drinks-type-cat .cold{
+      width: 49%;
+  }
+  .drinks-type-cat .hot li, .drinks-type-cat .cold li{
+      width: 100%;
+  }
+
+  .drinks-ul .drinks-item p {
+      margin-bottom: 0;
+  }
+
+  .par-order {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .btn-order {
+      text-align: center;
+      border: 1px solid #fff;
+      color: #fff;
+      padding-left: 80px;
+      padding-right: 80px;
+  }
+
+  .list-devices-parent{
+      margin-top: 20px;
+  }
+
+  .devices-ul .devices-item {
+      flex-basis: calc(195px - 10px);
+      margin: 2px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      padding: 20px 0;
+      border-radius: 8px;
+      transition: .3s ease-in-out;
+      background: #fff;
+      color: #000;
+  }
+  .devices-ul .devices-item:hover {
+      background-color: #fff;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+  }
+
+  .devices-ul .devices-item:hover p {
+      color: #000;
+  }
+
+  .in-start .devices-item{
+      flex-direction: column !important;
+  }
+  .device-details-item-total{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 20px auto 0;
+  }
+  .device_details_total , .drinks-number{
+      width: 35%;
+      position: relative;
+  }
+  .drinks-number .total , .device_details_total .total{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      margin: 10px auto 0;
+  }
+  .drinks-number .total p , .device_details_total .total{
+      margin-bottom: 0;
+      font-size: 30px;
+  }
+  .device_details_total::after , .drinks-number::after{
+      position: absolute;
+  content: '';
+  top: 52px;
+  left: -22px;
+  width: 1px;
+  height: 71%;
+  background-color: #6c6c6c;
+  }
+  .twice_details_total{
+      width: 20%;
+  }
+  .device_details_total , .drinks-number , .device_details_total{
+      text-align: center;
+  }
+  .device_details_total h2{
+      margin-bottom: 25px;
+  }
+  .device_details_total .same{
+      background-color: #ccc;
+      color: #000;
+      padding: 5px 45px;
+      font-weight: 700;
+  }
+  .same-padding{
+      padding: 0px 45px;
+  }
+  .twice_details_total{
+
+  }
+  .drinks-ul{
+     
+  }
+  .drinks-ul li{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
+      flex-basis: calc(50% - 10px);
+      margin: 2px;
+      text-align: center;
+      align-items: center;
+      padding: 8px 7px;
+      border-radius: 8px;
+      transition: .3s ease-in-out;
+      color: #fff;
+      margin-top: 15px;
+  }
+  .drinks-ul li p{
+      margin-bottom: 0;
+  }
+  .totals-inall{
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+  }
+  .totals-inall p{
+  font-size: 30px;
+  }
+  .buttons-option .buttons-reupdate{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 70px;
+  }
+  .buttons-option .buttons-reupdate button{
+      width: 48%;
+      border: 1px solid #fff;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #fff;
+  }
+  .buttons-option .okay-done{
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .buttons-option .okay-done button{
+      width: 100%;
+      border: 1px solid #fff;
+      color: #fff;
+  }
+  .playstart-header .button-start,
+    .playstart-header .calculator-time,
+    .playstart-header .logo-sec,
+    .playstart-header .user-details,
+    .playstart-header .expenses-sec {
+        width: 20%;
+    }
+    .button-start .btn-go , .playstart-header .expenses-sec .btn{
+        color: #fff;
+        border: 1px solid #fff;
+        width: 50%;
+        height: 50px;
+    }
+    .button-start .btn-go{
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 23px;
+    }
+
+    .book--now img {
+        width: 70%;
+    }
+
+    .calculator-time {
+        display: flex;
+        align-items: center;
+    }
+
+    .calculator-time p {
+        margin-bottom: 0 !important;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+
+    .playstart-header .logo-sec {
+        text-align: center;
+    }
+
+    .playstart-header .logo-sec p {
+        margin-bottom: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .playstart-header .user-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        padding: 0 56px;
+    }
+
+    .playstart-header .user-details p {
+        margin-bottom: 0 !important;
+        font-size: 13px !important;
+        color: #b4b0b0;
+    }
+    .playstart-header .user-details p i{
+        color: #fff !important;
+    }
+
+    .playstart-header .expenses-sec {
+        text-align: left;
+    }
+    .playstart-header .expenses-sec .btn-expenses {
+        text-transform: uppercase;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .pr-dev-drinks {
+        width: 98%;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .pr-dev-drinks .ch-per-devices-drinks {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .pr-dev-drinks .devices,
+    .pr-dev-drinks .drinks {
+        width: 49%;
+        position: relative;
+    }
+    .pr-dev-drinks .drinks::before{
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: 75%;
+        color: #fff;
+        background-color: #fff;
+        top: 35px;
+        right: -50px
+    }
+    .start,
+    .single-or-multi,
+    .time-best-open {
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 40x;
+        text-align: center;
+    }
+
+    .btn-start {
+        color: #fff;
+        width: 70%;
+        border: 1px solid #ffff;
+        padding: 13px 0;
+        border-radius: 8px;
+        text-transform: uppercase;
+        transition: .5s ease-in-out;
+        font-size: 29px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .btn-start:hover , 
+    .single-or-multi .btn-single:hover,
+    .single-or-multi .btn-multi:hover ,
+    .single-or-multi .btn-plus:hover , 
+    .time-best-open .btn:hover{
+        transform: translateY(-4px) scale(1.01);
+        transition: .5s ease-in-out;
+        color: #fff;
+        box-shadow: 0 2px 18px 1px rgb(159 152 161)
+    }
+
+    .single-or-multi,
+    .time-best-open {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .single-or-multi .btn-single,
+    .single-or-multi .btn-multi ,
+    .single-or-multi .btn-plus {
+        width: 30%;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .time-best-open .btn {
+        width: 47%;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .name-device,
+    .name-drinks {
+        width: 20%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .name-drinks{
+        width: 17% !important;
+    }
+
+    .name-device svg {
+        font-size: 23px !important;
+        margin-top: 10px !important;
+    }
+    .name-drinks svg{
+        font-size: 23px !important;
+    }
+
+    .name-device span,
+    .name-drinks span {
+        font-size: 22px;
+        margin-top: 8px;
+        font-weight: bold;
+    }
+
+    .devices-options {
+        width: 80%;
+    }
+
+    .drinks-dev {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .drinks-ul,
+    .devices-ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .drinks-ul .drinks-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+    .drinks-type-cat{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .drinks-type-cat .hot , .drinks-type-cat .cold{
+        width: 49%;
+    }
+    .drinks-type-cat .hot li, .drinks-type-cat .cold li{
+        width: 100%;
+    }
+
+    .drinks-ul .drinks-item p {
+        margin-bottom: 0;
+    }
+
+    .par-order {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .btn-order {
+        text-align: center;
+        border: 1px solid #fff;
+        color: #fff;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .list-devices-parent{
+        margin-top: 20px;
+    }
+
+    .devices-ul .devices-item {
+        flex-basis: calc(195px - 10px);
+        margin: 2px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        padding: 20px 0;
+        border-radius: 8px;
+        transition: .3s ease-in-out;
+        background: #fff;
+        color: #000;
+    }
+    .devices-ul .devices-item:hover {
+        background-color: #fff;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+
+    .devices-ul .devices-item:hover p {
+        color: #000;
+    }
+
+    .in-start .devices-item{
+        flex-direction: column !important;
+    }
+    .device-details-item-total{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    .device_details_total , .drinks-number{
+        width: 35%;
+        position: relative;
+    }
+    .drinks-number .total , .device_details_total .total{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        margin: 10px auto 0;
+    }
+    .drinks-number .total p , .device_details_total .total{
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    .device_details_total::after , .drinks-number::after{
+        position: absolute;
+    content: '';
+    top: 52px;
+    left: -22px;
+    width: 1px;
+    height: 71%;
+    background-color: #6c6c6c;
+    }
+    .twice_details_total{
+        width: 20%;
+    }
+    .device_details_total , .drinks-number , .device_details_total{
+        text-align: center;
+    }
+    .device_details_total h2{
+        margin-bottom: 25px;
+    }
+    .device_details_total .same{
+        background-color: #ccc;
+        color: #000;
+        padding: 5px 45px;
+        font-weight: 700;
+    }
+    .same-padding{
+        padding: 0px 45px;
+    }
+    .twice_details_total{
+
+    }
+    .drinks-ul{
+       
+    }
+    .drinks-ul li{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        flex-basis: calc(50% - 10px);
+        margin: 2px;
+        text-align: center;
+        align-items: center;
+        padding: 8px 7px;
+        border-radius: 8px;
+        transition: .3s ease-in-out;
+        color: #fff;
+        margin-top: 15px;
+    }
+    .drinks-ul li p{
+        margin-bottom: 0;
+    }
+    .totals-inall{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .totals-inall p{
+    font-size: 30px;
+    }
+    .buttons-option .buttons-reupdate{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .buttons-option .buttons-reupdate button{
+        width: 48%;
+        border: 1px solid #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .buttons-option .okay-done{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons-option .okay-done button{
+        width: 100%;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    .expenses{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .expenses h2{
+        font-weight: bold;
+    font-size: 41px;
+        margin-top: 10px;
+}
+.expenses .item-expensive{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+.expenses .cost , .expenses .invetory , .expenses .cost , .expenses .okay-done{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.expenses .cost p, .expenses .invetory p{
+    margin-left: 10px;
+}
+.expenses .notice textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.expenses input{
+    width: 80px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+.expenses .btn-confitm{
+    padding: 3px 50px !important;
+    color: #fff !important;
+}

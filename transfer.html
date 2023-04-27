@@ -14,59 +14,72 @@
 
     <link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+    .form-login-transfer{
+        width: 30%;
+        margin: auto;
+        margin-top : 80px;
+        color: #fff;
+    }
+    .parent-form-login-transfer button{
+        transition: .5s ease-in-out;
+    }
+    .parent-form-login-transfer .btn-transfer{
+        border: 1px solid #fff;
+        border-radius: 8px;
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 15px;
+        color: #Fff;
+    }
+    .parent-form-login-transfer .btn-verify {
+        width: 100%;
+    }
+    .transfer h1{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .transfer p{
+        font-size: 30px;
+    }
+    .parent-form-login-transfer button:hover{
+        box-shadow: 0 0px 39px rgb(200 184 184 / 40%);
+        transform: translateY(-10px);
+        transition: .5s ease-in-out;
+    }
+</style>
 <body>
-
-
-  <header class="header" id="header">
-    <a href="#" class="nav__logo mt-3"> 
-     <img src="imgs/ICON.svg" alt="" srcset="">
-  </a>
-</header>
-
-    <div class="form-sign">
-      <div class="close-par">
-        <a href="#" class="close-icon-logo"> 
-          <i class="fa-solid fa-arrow-left"></i>
-        </a>
-    </div>
-      <div class="container">
-            <form>
-                <div class="row">
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="إسم المكان">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="رقم السجل">
-                  </div>
+    <div class="form-login-transfer">
+        <div class="container">
+            <div class="head text-center transfer">
+                <h1> Transfer </h1>
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <p>Totals</p>
+                    </div>
+                    <div class="col">
+                        <p>1450</p>
+                    </div>
                 </div>
+            </div>
+            
+
+            <form class="parent-form-login-transfer">
                 <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="الإسم">
+                    <div class="col-12">
+                        <button class="btn btn-transfer">Mohamed</button>
                     </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="رقم الموبايل">
+                    <div class="col-12">
+                        <button class="btn btn-transfer">Mazin</button>
                     </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="العنوان">
+                    <div class="col-12">
+                        <button class="btn btn-transfer">Karim</button>
                       </div>
                 </div>
-                <div class="row">
+                <div class="row verify-div-login text-center mt-5 mb-5">
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="إسم المستخدم">
+                      <a href="" class="btn btn-verify btn-success"> ok  </a>
                     </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="كلمة السر">
-                    </div>
-                    <div class="col">
-                        <div class="name-bussiness">
-                          <input type="text" class="form-control" placeholder="اسم الشركه"> <p>xoplay.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="verify-div">
-                    <button class="btn-verify-success">
-                      إنشاء الحساب
-                    </button>
                 </div>
               </form>
         </div>
@@ -76,6 +89,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/fontawesome.min.js" integrity="sha512-TXHaOs+47HgWwY4hUqqeD865VIBRoyQMjI27RmbQVeKb1pH1YTq0sbuHkiUzhVa5z0rRxG8UfzwDjIBYdPDM3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/main.js"></script>
+<script src="ls/main.js"></script>
 </body>
 </html>
